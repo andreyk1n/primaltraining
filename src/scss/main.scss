@@ -1,6 +1,7 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 @use 'partials/header';
+@use 'partials/buttons';
 @use 'partials/footer';
 
 
@@ -153,4 +154,8 @@ input {
 .instrument-sans-bold {
     font-family: "Instrument Sans", sans-serif;
     font-weight: 700;
+}
+
+a {
+    text-decoration: none;
 }

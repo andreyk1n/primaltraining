@@ -4,7 +4,7 @@ $fontSize: 18px;
 
 // Кольори
 $bgColor: white;
-$transitionDuration: .8s;
+$transitionDuration: .35s;
 $fontColor: rgb(67, 67, 70);
 $boxShadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -23,7 +23,7 @@ $h2FontWeight: 800;
 $h3FontWeight: 700;
 
 // Обмеження контейнера
-$maxWidthContainer: 1170px;
+$maxWidthContainer: 1500px;
 $paddingContainer: 15px;
 
 // Адаптив
@@ -35,6 +35,3 @@ $tablet: 992px;
 $desktopSmall: 1200px;
 $desktopMedium: 1440px;
 $desktopBig: 1400px;
-
-// Перехід
-$transitionDuration: .5s;
