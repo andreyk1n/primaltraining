@@ -1,0 +1,19 @@
+.hero {
+    margin: 100px 0 20px 0;
+    
+    &__title {
+        color: #000;
+        text-transform: uppercase;
+        font-size: clamp(37px, 8vw, 116px);
+        line-height: clamp(30px, 8vw, 128px);
+        letter-spacing: -6px;
+
+        @media (max-width: 992px) {
+            letter-spacing: -2px;
+        }
+
+        span {
+            color: #808dfd;
+        }
+    }
+}
