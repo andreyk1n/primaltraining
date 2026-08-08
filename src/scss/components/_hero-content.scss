@@ -9,5 +9,78 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 20px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 30px 20px 60px 0;
+
+        @media (max-width: 992px) {
+            padding: 20px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        color: #000;
+        font-size: clamp(28px, 4vw, 45px);
+        line-height: clamp(25px, 3.3vw, 41px);
+        text-transform: uppercase;
+
+        br {
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+
+    &__desription {
+        color: #000;
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    &__link {
+        margin: 32px 0 0 0;
+        color: #000;
+        font-size: 17px;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: fit-content;
+        transition: $transitionDuration;
+
+        &::after {
+            content: '';
+            width: 0;
+            height: 1px;
+            background-color: #000;
+            display: block;
+            transition: $transitionDuration;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 854 / 480;
     }
 }
