@@ -3,6 +3,7 @@
 @use 'partials/header';
 @use 'partials/buttons';
 @use 'components/hero';
+@use 'components/hero-content';
 @use 'partials/footer';
 
 
@@ -82,7 +83,7 @@ body {
     max-width: $maxWidthContainer;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px
+    // padding: 0 15px
 }
 
 button {

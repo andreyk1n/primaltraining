@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+.hero-content {
+    width: 100%;
+    background-color: #E9ECFF;
+
+    &__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+}
