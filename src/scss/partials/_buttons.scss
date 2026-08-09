@@ -6,11 +6,20 @@
     transition: $transitionDuration;
     text-transform: uppercase;
 
-
     &--violet {
         color: #000;
         background-color: #808cfd;
         border: 2px solid #808cfd;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    &--white {
+        color: #000;
+        background-color: #E9ECFF;
+        border: 2px solid #E9ECFF;
 
         &:hover {
             background-color: transparent;
