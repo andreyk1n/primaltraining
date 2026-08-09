@@ -48,10 +48,17 @@
 
     &__title {
         color: #000;
-        font-size: clamp(44px, 4vw, 57px);
+        font-size: clamp(36, 4vw, 57px);
         font-weight: 700;
-        line-height: clamp(44px, 4vw, 57px);
+        line-height: clamp(36, 4vw, 57px);
         text-transform: uppercase;
         text-align: center;
+    }
+
+    &__description {
+        max-width: 780px;
+        text-align: center;
+        color: #000;
+        font-size: 17px;
     }
 }

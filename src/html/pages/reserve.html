@@ -1,0 +1,19 @@
+@@include('partials/head.html')
+
+
+<div class="wrapper">
+    @@include('partials/header.html')
+    @@include('components/hero.html', {
+    "title": "Book a <span>session</span>",
+    })
+
+    @@include('components/cta.html', {
+    "modifier": "",
+    "label": "",
+    "title": "Primal Personal Training",
+    "description": "Receive personalized guidance and tailored programs designed to unlock your individual primal potential. Our expert coaches will guide you every step of the way.",
+    "link": "#",
+    "linkText": "Reserve your spot"
+    })
+    @@include('partials/footer.html')
+</div>
