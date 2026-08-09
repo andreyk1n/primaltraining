@@ -1,15 +1,18 @@
 <section class="cta @@if (modifier) {@@modifier}">
     <div class="cta__container">
         @@if (label) {
-            <p class="cta__label geist">@@label</p>
+        <p class="cta__label geist">@@label</p>
         }
         @@if (title) {
-            <h2 class="cta__title anek-tamil-bold">@@title</h2>
+        <h2 class="cta__title anek-tamil-bold">@@title</h2>
+        }
+        @@if (description) {
+        <p class="cta__description geist">@@description</p>
         }
         @@if (link) {
-            <a href="@@link" class="button button--white">
-                @@if (linkText) {@@linkText}
-            </a>
+        <a href="@@link" class="button button--white">
+            @@if (linkText) {@@linkText}
+        </a>
         }
     </div>
 </section>
