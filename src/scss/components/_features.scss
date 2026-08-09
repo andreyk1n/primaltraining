@@ -38,6 +38,15 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         background-color: #E9ECFF;
+
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
 
 
