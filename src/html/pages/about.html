@@ -2,10 +2,17 @@
 
 
 <div class="wrapper">
-  @@include('partials/header.html')
-  @@include('components/hero.html', {
-  "title": "About us",
-  })
+    @@include('partials/header.html')
+    @@include('components/hero.html', {
+    "title": "About us",
+    })
 
-  @@include('partials/footer.html')
+    @@include('components/cta.html', {
+    "modifier": "cta--white",
+    "label": "What we believe in",
+    "title": "Join the Primal Tribe Today!",
+    "link": "reserve.html",
+    "linkText": "Reserve your spot"
+    })
+    @@include('partials/footer.html')
 </div>
