@@ -48,9 +48,9 @@
 
     &__title {
         color: #000;
-        font-size: clamp(36, 4vw, 57px);
+        font-size: clamp(36px, 4vw, 57px);
         font-weight: 700;
-        line-height: clamp(36, 4vw, 57px);
+        line-height: clamp(36px, 4vw, 57px);
         text-transform: uppercase;
         text-align: center;
     }
