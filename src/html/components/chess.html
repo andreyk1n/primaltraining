@@ -1,6 +1,6 @@
-<div class="chess @@if (dark === 'true') {chess--violet}">
+<div class="chess @@if (dark === 'true') {chess--violet} @@if (reverse === 'true') {chess--reverse}">
     <div class="chess__container">
-        @@if (reverse === 'true') {
+        @@if (reverse === 'true' && image !== '') {
             <img
                 src="@img/chess/@@image"
                 alt="Chess image"
@@ -9,13 +9,19 @@
             >
         }
         <div class="chess__text">
-            <h2 class="chess__title anek-tamali">@@title</h2>
+            @@if (title !== '') {
+                <h2 class="chess__title anek-tamali">@@title</h2>
+            }
             <div class="chess__subtext">
-                <h3 class="chess__subtitle anek-tamalittu">@@subtitle</h3>
-                <p class="chess__description geist">@@description</p>
+                @@if (subtitle !== '') {
+                    <h3 class="chess__subtitle anek-tamalittu">@@subtitle</h3>
+                }
+                @@if (description !== '') {
+                    <p class="chess__description geist">@@description</p>
+                }
             </div>
         </div>
-        @@if (reverse !== 'true') {
+        @@if (reverse !== 'true' && image !== '') {
             <img
                 src="@img/chess/@@image"
                 alt="Chess image"
