@@ -74,7 +74,7 @@
 
     &__description {
         color: #000;
-        font-size: 17px;
+        font-size: clamp(18px, 2vw, 20px);
     }
 
     &__subtext {
