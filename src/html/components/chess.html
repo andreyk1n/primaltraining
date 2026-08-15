@@ -1,4 +1,4 @@
-<div class="chess chess--violet">
+<div class="chess chess--violet @@if (reverse === 'true') {chess--reverse}">
     <div class="chess__container">
         <div class="chess__text">
             <h2 class="chess__title anek-tamali">@@title</h2>
@@ -7,7 +7,11 @@
                 <p class="chess__description geist">@@description</p>
             </div>
         </div>
-        <img src="@img/chess/@@image" alt="Chess image" class="chess__image" draggable="false">
-
+        <img
+            src="@img/chess/@@image"
+            alt="Chess image"
+            class="chess__image"
+            draggable="false"
+        >
     </div>
 </div>
